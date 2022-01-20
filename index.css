@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #222;
+    color: #eee;
+}
+
+#time_clock_button {
+    background: #17b117;
+    border: 0;
+    border-radius: 100%;
+    width: 180px;
+    height: 180px;
+    color: white;
+    /* font-weight: bold; */
+    font-size: 2rem;
+    transition: .5s;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#time_clock_button:hover {
+    filter: brightness(80%);
+}
+
+h1 {
+    position: relative;
+    z-index: 1;
+}
+
+h1:before {
+    border-top: 4px solid #aaa;
+    content:"";
+    margin: 0 auto;
+    position: absolute;
+    top: 50%; left: 0; right: 0; bottom: 0;
+    width: 95%;
+    z-index: -1;
+}
+
+h1 span {
+    background: #222; 
+    padding: 0 15px; 
+    margin-left: 12%;
+}
+
+.day {
+    /* border: 1px solid #aaa; */
+    height: 80px;
+    margin: 15px;
+    position: relative;
+}
+
+legend {
+    padding: 10px;
+}
+
+legend span {
+    margin-left: 10px;
+    color: #999;
+}
+
+.space {
+    height: 100%;
+    width: 100%;
+    background: #444;
+    position: relative;
+}
+
+.schedule {
+    position: absolute;
+    /* width: 33%; */
+    width: 0;
+    height: 100%;
+    /* left: 50%; */
+    border-left: 3px solid #17b117;
+    border-right: 3px solid #17b117;
+    background: #17b11777;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    /* font-size: 1.7rem; */
+    line-height: 40px;
+    overflow: hidden;
+}
