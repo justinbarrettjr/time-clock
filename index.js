@@ -49,6 +49,10 @@ let clock = new TimeClock()
 let storage = new LocalStorage()
 let div
 
+document.addEventListener("DOMContentLoaded", function(){
+    init()
+});
+
 function init() {
     clock.button = document.querySelector('#time_clock_button')
     clock.button.onclick = function() {
