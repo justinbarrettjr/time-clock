@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 function init() {
+    console.log('initialized')
     clock.button = document.querySelector('#time_clock_button')
     clock.button.onclick = function() {
         if(clock.clocked_in)
