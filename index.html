@@ -5,27 +5,14 @@
   <script src='platforms.js'></script>
   <script src='index.js'></script>
   <link rel='stylesheet' href='index.css' />
+  <!-- <link rel='stylesheet' href='fontawesome.min.css' /> -->
+  <script src='all.min.js'></script>
 <head>
-<body>
+<body onresize="resize()">
 
+  <i id="moon" class="fa-solid fa-moon" onclick="toggle_dark_mode()"></i>
   <button id="time_clock_button">Clock In</button>
-  <h1><span>Jan</span></h1>
-  <fieldset class="day" id="today">
-    <legend>19<span>(8 hr)</span></legend>
-    <div class="space">
-      <!-- <div class="schedule">12:00 - 20:00</div> -->
-    </div>
-  </fieldset>
-
-  <fieldset class="day">
-    <legend>20</legend>
-    <div class="space"></div>
-  </fieldset>
-
-  <fieldset class="day">
-    <legend>21</legend>
-    <div class="space"></div>
-  </fieldset>
+  <div id="container"></div>
 
 </body>
 </html>

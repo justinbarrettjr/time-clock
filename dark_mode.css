@@ -1,0 +1,57 @@
+body, h1, h1 span { background: #111; }
+h1 { box-shadow: 0 5px 9px #111; }
+body { color: #eee; }
+#time_clock_button { box-shadow: 0 0 15px #555; }
+h1:before { border-top: 4px solid #555; }
+fieldset { border: 2px solid #555; }
+.space { background: #333; }
+
+h1 span {
+    padding: 0 15px; 
+    margin-left: 12%;
+}
+
+legend {
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+legend span {
+    margin-left: 10px;
+    color: #999;
+}
+
+.space {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.space div {
+    position: absolute;
+    height: 100%;
+    width: 0;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    /* font-size: 1.7rem; */
+    line-height: 40px;
+    overflow: hidden;
+}
+
+.time_in {
+    border-left: 2px solid #17b117;
+    border-right: 2px solid #17b117;
+    background: #17b11777;
+}
+
+.schedule {
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    background: #fff7;
+}
+
+#container {
+    overflow: hidden;
+    overflow-y: scroll;
+}

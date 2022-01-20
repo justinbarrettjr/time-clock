@@ -1,18 +1,24 @@
+body, h1, h1 span { background: #fff; }
+h1 { box-shadow: 0 5px 9px #fff; }
+body { color: #555; }
+#time_clock_button { box-shadow: 0 0 15px #555; }
+h1:before { border-top: 4px solid #aaa; }
+fieldset { border: 2px solid #aaa; }
+.space { background: #ccc; }
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #222;
-    color: #eee;
 }
 
 #time_clock_button {
     background: #17b117;
     border: 0;
     border-radius: 100%;
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
     color: white;
     /* font-weight: bold; */
-    font-size: 2rem;
+    font-size: 1.6rem;
     transition: .5s;
     display: block;
     margin: auto;
@@ -25,12 +31,13 @@ body {
 }
 
 h1 {
-    position: relative;
     z-index: 1;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
 }
 
 h1:before {
-    border-top: 4px solid #aaa;
     content:"";
     margin: 0 auto;
     position: absolute;
@@ -40,12 +47,11 @@ h1:before {
 }
 
 h1 span {
-    background: #222; 
     padding: 0 15px; 
     margin-left: 12%;
 }
 
-.day {
+fieldset {
     /* border: 1px solid #aaa; */
     height: 80px;
     margin: 15px;
@@ -54,6 +60,7 @@ h1 span {
 
 legend {
     padding: 10px;
+    font-size: 1.2rem;
 }
 
 legend span {
@@ -64,23 +71,42 @@ legend span {
 .space {
     height: 100%;
     width: 100%;
-    background: #444;
     position: relative;
 }
 
-.schedule {
+.space div {
     position: absolute;
-    /* width: 33%; */
-    width: 0;
     height: 100%;
-    /* left: 50%; */
-    border-left: 3px solid #17b117;
-    border-right: 3px solid #17b117;
-    background: #17b11777;
+    width: 0;
     text-align: center;
     color: white;
     font-weight: bold;
     /* font-size: 1.7rem; */
     line-height: 40px;
     overflow: hidden;
+}
+
+.time_in {
+    border-left: 2px solid #17b117;
+    border-right: 2px solid #17b117;
+    background: #17b11777;
+}
+
+.schedule {
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    background: #fff7;
+}
+
+#container {
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+#moon {
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 3rem;
 }
